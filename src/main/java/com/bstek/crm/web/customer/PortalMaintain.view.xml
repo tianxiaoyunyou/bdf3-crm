@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model/>
+  <View>
+    <Property name="packages">font-awesome,colors</Property>
+    <Portal>
+      <Columns>
+        <Column/>
+        <Column/>
+      </Columns>
+      <Portlets>
+        <Portlet>
+          <Property name="column">0</Property>
+          <Property name="caption">测试一</Property>
+          <Buttons/>
+          <Children/>
+          <Tools/>
+        </Portlet>
+        <Portlet>
+          <Property name="column">0</Property>
+          <Property name="caption">测试二</Property>
+          <Buttons/>
+          <Children/>
+          <Tools/>
+        </Portlet>
+        <Portlet>
+          <Property name="column">1</Property>
+          <Property name="caption">测试三</Property>
+          <Buttons/>
+          <Children/>
+          <Tools/>
+        </Portlet>
+        <Portlet>
+          <Property name="column">1</Property>
+          <Property name="caption">测试四</Property>
+          <Buttons/>
+          <Children/>
+          <Tools/>
+        </Portlet>
+      </Portlets>
+    </Portal>
+  </View>
+</ViewConfig>

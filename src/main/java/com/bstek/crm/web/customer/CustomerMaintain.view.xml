@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model>
+    <DataType name="dyCustomerCondition">
+      <Property name="creationType">com.bstek.crm.domain.Customer</Property>
+      <PropertyDef name="id">
+        <Property/>
+        <Property name="label">标识</Property>
+      </PropertyDef>
+      <PropertyDef name="owner">
+        <Property/>
+        <Property name="label">所有者</Property>
+      </PropertyDef>
+      <PropertyDef name="grade">
+        <Property/>
+        <Property name="label">等级</Property>
+      </PropertyDef>
+      <PropertyDef name="website">
+        <Property/>
+        <Property name="label">网站</Property>
+      </PropertyDef>
+      <PropertyDef name="name">
+        <Property/>
+        <Property name="label">姓名</Property>
+      </PropertyDef>
+      <PropertyDef name="annualIncome">
+        <Property/>
+        <Property name="label">年收入</Property>
+      </PropertyDef>
+      <PropertyDef name="empNums">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">员工数</Property>
+      </PropertyDef>
+      <PropertyDef name="phone">
+        <Property/>
+        <Property name="label">手机</Property>
+      </PropertyDef>
+      <PropertyDef name="industry">
+        <Property/>
+        <Property name="label">行业</Property>
+      </PropertyDef>
+      <PropertyDef name="description">
+        <Property/>
+        <Property name="label">描述</Property>
+      </PropertyDef>
+      <PropertyDef name="country">
+        <Property/>
+        <Property name="label">国家/地区</Property>
+      </PropertyDef>
+      <PropertyDef name="province">
+        <Property/>
+        <Property name="label">省/市</Property>
+      </PropertyDef>
+      <PropertyDef name="city">
+        <Property/>
+        <Property name="label">城市</Property>
+      </PropertyDef>
+      <PropertyDef name="street">
+        <Property/>
+        <Property name="label">街道</Property>
+      </PropertyDef>
+      <PropertyDef name="zipcode">
+        <Property/>
+        <Property name="label">邮编</Property>
+      </PropertyDef>
+      <PropertyDef name="birth">
+        <Property name="dataType">Date</Property>
+        <Property name="label">生日</Property>
+      </PropertyDef>
+      <PropertyDef name="customerId">
+        <Property/>
+        <Property name="label">客户id</Property>
+      </PropertyDef>
+      <PropertyDef name="createBy">
+        <Property/>
+        <Property name="label">创建者</Property>
+      </PropertyDef>
+      <PropertyDef name="editBy">
+        <Property/>
+        <Property name="label">修改者</Property>
+      </PropertyDef>
+      <PropertyDef name="createTime">
+        <Property name="dataType">Date</Property>
+        <Property name="label">创建时间</Property>
+      </PropertyDef>
+      <PropertyDef name="editTime">
+        <Property name="dataType">Date</Property>
+        <Property name="label">修改时间</Property>
+      </PropertyDef>
+    </DataType>
+    <DataType name="dyCustomer">
+      <Property name="creationType">com.bstek.crm.domain.Customer</Property>
+      <PropertyDef name="id">
+        <Property/>
+        <Property name="label">标识</Property>
+      </PropertyDef>
+      <PropertyDef name="owner">
+        <Property/>
+        <Property name="label">所有者</Property>
+      </PropertyDef>
+      <PropertyDef name="grade">
+        <Property/>
+        <Property name="label">等级</Property>
+      </PropertyDef>
+      <PropertyDef name="website">
+        <Property/>
+        <Property name="label">网站</Property>
+      </PropertyDef>
+      <PropertyDef name="name">
+        <Property/>
+        <Property name="label">姓名</Property>
+      </PropertyDef>
+      <PropertyDef name="annualIncome">
+        <Property/>
+        <Property name="label">年收入</Property>
+      </PropertyDef>
+      <PropertyDef name="empNums">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">员工数</Property>
+      </PropertyDef>
+      <PropertyDef name="phone">
+        <Property/>
+        <Property name="label">手机</Property>
+      </PropertyDef>
+      <PropertyDef name="industry">
+        <Property/>
+        <Property name="label">行业</Property>
+      </PropertyDef>
+      <PropertyDef name="description">
+        <Property/>
+        <Property name="label">描述</Property>
+      </PropertyDef>
+      <PropertyDef name="country">
+        <Property/>
+        <Property name="label">国家/地区</Property>
+      </PropertyDef>
+      <PropertyDef name="province">
+        <Property/>
+        <Property name="label">省/市</Property>
+      </PropertyDef>
+      <PropertyDef name="city">
+        <Property/>
+        <Property name="label">城市</Property>
+      </PropertyDef>
+      <PropertyDef name="street">
+        <Property/>
+        <Property name="label">街道</Property>
+      </PropertyDef>
+      <PropertyDef name="zipcode">
+        <Property/>
+        <Property name="label">邮编</Property>
+      </PropertyDef>
+      <PropertyDef name="birth">
+        <Property name="dataType">Date</Property>
+        <Property name="label">生日</Property>
+      </PropertyDef>
+      <PropertyDef name="customerId">
+        <Property/>
+        <Property name="label">客户id</Property>
+      </PropertyDef>
+      <PropertyDef name="createBy">
+        <Property/>
+        <Property name="label">创建者</Property>
+      </PropertyDef>
+      <PropertyDef name="editBy">
+        <Property/>
+        <Property name="label">修改者</Property>
+      </PropertyDef>
+      <PropertyDef name="createTime">
+        <Property name="dataType">Date</Property>
+        <Property name="label">创建时间</Property>
+      </PropertyDef>
+      <PropertyDef name="editTime">
+        <Property name="dataType">Date</Property>
+        <Property name="label">修改时间</Property>
+      </PropertyDef>
+    </DataType>
+  </Model>
+  <View layout="padding:15">
+    <Property name="packages">font-awesome,colors</Property>
+    <DataSet id="dsCustomer">
+      <Property name="dataType">[dyCustomer]</Property>
+    </DataSet>
+    <Panel layout="padding:5;regionPadding:10">
+      <Buttons/>
+      <Children>
+        <FieldSet>
+          <Property name="caption">查询条件</Property>
+          <Buttons/>
+          <Children>
+            <AutoForm id="atCustomerCondition">
+              <Property name="cols">*,*,*</Property>
+              <Property name="dataType">dyCustomerCondition</Property>
+              <Property name="createPrivateDataSet">true</Property>
+              <AutoFormElement>
+                <Property name="name">owner</Property>
+                <Property name="property">owner</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">grade</Property>
+                <Property name="property">grade</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">website</Property>
+                <Property name="property">website</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">name</Property>
+                <Property name="property">name</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">annualIncome</Property>
+                <Property name="property">annualIncome</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">empNums</Property>
+                <Property name="property">empNums</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">phone</Property>
+                <Property name="property">phone</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">industry</Property>
+                <Property name="property">industry</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">description</Property>
+                <Property name="property">description</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">country</Property>
+                <Property name="property">country</Property>
+                <Editor/>
+              </AutoFormElement>
+              <AutoFormElement>
+                <Property name="name">province</Property>
+                <Property name="property">province</Property>
+                <Editor/>
+              </AutoFormElement>
+              <Button>
+                <Property name="caption">查询</Property>
+                <Property name="iconClass">fa fa-search red-text</Property>
+              </Button>
+            </AutoForm>
+          </Children>
+        </FieldSet>
+        <ToolBar>
+          <ToolBarButton>
+            <Property name="caption">添加</Property>
+            <Property name="iconClass">fa fa-plus yellow-text</Property>
+          </ToolBarButton>
+          <ToolBarButton>
+            <Property name="caption">修改</Property>
+            <Property name="iconClass">fa fa-pencil red-text</Property>
+          </ToolBarButton>
+          <ToolBarButton>
+            <Property name="caption">删除</Property>
+            <Property name="iconClass">fa fa-minus red-text</Property>
+          </ToolBarButton>
+        </ToolBar>
+        <Container>
+          <DataGrid>
+            <Property name="dataSet">dsCustomer</Property>
+            <DataColumn name="owner">
+              <Property name="property">owner</Property>
+            </DataColumn>
+            <DataColumn name="grade">
+              <Property name="property">grade</Property>
+            </DataColumn>
+            <DataColumn name="website">
+              <Property name="property">website</Property>
+            </DataColumn>
+            <DataColumn name="name">
+              <Property name="property">name</Property>
+            </DataColumn>
+            <DataColumn name="annualIncome">
+              <Property name="property">annualIncome</Property>
+            </DataColumn>
+            <DataColumn name="empNums">
+              <Property name="property">empNums</Property>
+            </DataColumn>
+            <DataColumn name="phone">
+              <Property name="property">phone</Property>
+            </DataColumn>
+            <DataColumn name="industry">
+              <Property name="property">industry</Property>
+            </DataColumn>
+            <DataColumn name="description">
+              <Property name="property">description</Property>
+            </DataColumn>
+            <DataColumn name="country">
+              <Property name="property">country</Property>
+            </DataColumn>
+            <DataColumn name="province">
+              <Property name="property">province</Property>
+            </DataColumn>
+            <DataColumn name="city">
+              <Property name="property">city</Property>
+            </DataColumn>
+            <DataColumn name="street">
+              <Property name="property">street</Property>
+            </DataColumn>
+            <DataColumn name="zipcode">
+              <Property name="property">zipcode</Property>
+            </DataColumn>
+            <DataColumn name="birth">
+              <Property name="property">birth</Property>
+            </DataColumn>
+            <DataColumn name="customerId">
+              <Property name="property">customerId</Property>
+            </DataColumn>
+            <DataColumn name="createBy">
+              <Property name="property">createBy</Property>
+            </DataColumn>
+            <DataColumn name="editBy">
+              <Property name="property">editBy</Property>
+            </DataColumn>
+            <DataColumn name="createTime">
+              <Property name="property">createTime</Property>
+            </DataColumn>
+            <DataColumn name="editTime">
+              <Property name="property">editTime</Property>
+            </DataColumn>
+          </DataGrid>
+          <DataPilot layoutConstraint="bottom">
+            <Property name="itemCodes">pages</Property>
+          </DataPilot>
+        </Container>
+      </Children>
+      <Tools/>
+    </Panel>
+  </View>
+</ViewConfig>
